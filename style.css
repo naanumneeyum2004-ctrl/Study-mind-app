@@ -1,0 +1,19 @@
+*{box-sizing:border-box}
+body{margin:0;font-family:Arial,sans-serif;background:#f5f7fb;color:#172033}
+.splash{position:fixed;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;background:#f5f7fb;z-index:10;animation:splashOut .7s ease 2.4s forwards}
+.splash-logo{font-size:82px;animation:pop .9s ease}
+.splash h1{margin:12px 0 8px;font-size:34px;animation:up .8s ease .2s both}
+.created{font-size:17px;color:#667085;animation:up .8s ease .55s both}
+.created strong{color:#172033}
+.hidden{display:none}
+.app{max-width:520px;margin:0 auto;min-height:100vh;padding:56px 22px;text-align:center}
+.logo{font-size:64px}h1{margin:8px 0;font-size:32px}p{color:#667085}
+.card{margin-top:28px;background:#fff;border-radius:20px;padding:22px;text-align:left;box-shadow:0 8px 30px rgba(0,0,0,.08)}
+label{display:block;font-weight:700;margin-bottom:8px}
+input{width:100%;padding:14px;border:1px solid #d0d5dd;border-radius:12px;font-size:16px}
+button{width:100%;margin-top:14px;padding:14px;border:0;border-radius:12px;font-size:16px;font-weight:700;cursor:pointer}
+#result{margin-top:18px;line-height:1.6}
+small{display:block;margin-top:28px;color:#98a2b3}
+@keyframes pop{0%{transform:scale(.4);opacity:0}70%{transform:scale(1.12)}100%{transform:scale(1);opacity:1}}
+@keyframes up{from{transform:translateY(20px);opacity:0}to{transform:translateY(0);opacity:1}}
+@keyframes splashOut{to{opacity:0;visibility:hidden}}

@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>StudyMind AI</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <section id="splash" class="splash">
+    <div class="splash-logo">🧠</div>
+    <h1>StudyMind AI</h1>
+    <div class="created">Created by <strong>Naflu</strong> ✨</div>
+  </section>
+
+  <main id="mainApp" class="app hidden">
+    <div class="logo">🧠</div>
+    <h1>StudyMind AI</h1>
+    <p>Turn lectures into simple study notes.</p>
+
+    <div class="card">
+      <label for="topic">Enter a topic</label>
+      <input id="topic" placeholder="e.g. Operations Management">
+      <button onclick="generate()">Create Notes</button>
+      <div id="result"></div>
+    </div>
+
+    <small>Created by Naflu</small>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>
